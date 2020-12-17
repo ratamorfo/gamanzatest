@@ -5,28 +5,28 @@ import PropTypes from "prop-types";
 // Components
 import { Card, CardMedia, CardContent } from "@material-ui/core";
 
-const EpisodesCards = ({ death }) => {
+const EpisodesCards = ({ episode }) => {
   console.log("enter");
   return (
     <Fragment>
-      <Card className="death">
-        <CardMedia image={death.img} />
+      <Card className="episode">
+        <CardMedia image={episode.img} />
         <CardContent>
-          <p className="death_name">
-            <span className="subtitle">Name: </span>
-            {death.death}
+          <p className="episode_title">
+            <span className="subtitle">Tile: </span>
+            {episode.title}
           </p>
-          <p className="death_cause">
-            <span className="subtitle">Cause: </span>
-            {death.cause}
+          <p className="episode_season">
+            <span className="subtitle">Season: </span>
+            {episode.season}
           </p>
-          <p className="death_responsible">
-            <span className="subtitle">Responsible: </span>
-            {death.resposible}
+          <p className="episode_episode">
+            <span className="subtitle">Episode: </span>
+            {episode.episode}
           </p>
-          <p className="death_last_words">
-            <span className="subtitle">Last Words: </span>
-            {death.last_words}
+          <p className="episode_air_date">
+            <span className="subtitle">Air Date: </span>
+            {episode.air_date}
           </p>
         </CardContent>
       </Card>
@@ -38,5 +38,5 @@ export default EpisodesCards;
 
 // Props
 EpisodesCards.propTypes = {
-  death: PropTypes.object.isRequired,
+  episode: PropTypes.object.isRequired,
 };

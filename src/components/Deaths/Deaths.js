@@ -14,7 +14,7 @@ const Deaths = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const getDeathsList = async (offset) => {
+  const getDeathsList = async () => {
     try {
       const deathsData = await axios.get(
         `https://www.breakingbadapi.com/api/deaths`
@@ -34,14 +34,20 @@ const Deaths = () => {
   };
 
   return (
-    <div className="deaths">
-      <p>Total Deaths: {totalDeaths}</p>
-      <h3>Deaths</h3>
-      <div className="list_deaths">
-        {deaths.map((death, key) => {
-          return <DeathsCard key={key} death={death} />;
-        })}
-      </div>
+    <div>
+      {deaths.length > 0 ? (
+        <div className="deaths">
+          <h3>Deaths</h3>
+          <p>Total Deaths: {totalDeaths}</p>
+          <div className="list_deaths">
+            {deaths.map((death, key) => {
+              return <DeathsCard key={key} death={death} />;
+            })}
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
