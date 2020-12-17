@@ -11,7 +11,7 @@ const Header = () => {
   const items = menuList;
   return (
     <header className="header">
-      <ul>
+      <ul className="main_menu">
         {items &&
           items.map((item, key) => (
             <li key={key}>

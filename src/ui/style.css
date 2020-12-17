@@ -1,0 +1,115 @@
+/*HEADER STYLE*/
+.header {
+  background-color: #202096;
+  display: block;
+  overflow: hidden;
+}
+.main_menu {
+  display: block;
+  overflow: hidden;
+  padding: 0px 50px;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1500px;
+}
+.main_menu li {
+  float: left;
+  list-style: none;
+}
+.main_menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*#Content Style*/
+.main_content {
+  margin: 0px auto;
+  padding: 40px 50px;
+  max-width: 1500px;
+}
+.Home h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 18px;
+}
+/*#Characters and Deaths Style*/
+.characters {
+  width: 60%;
+  float: left;
+}
+.sort_section {
+  max-width: 830px;
+  text-align: center;
+}
+.sort_section button {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.list_characters {
+  display: flex;
+  flex-direction: row;
+  max-width: 830px;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding-top: 30px;
+}
+.list_characters .character {
+  width: 270px;
+  border-radius: 10px;
+  background-color: #ebeeff;
+  margin-bottom: 15px;
+  min-height: 260px;
+}
+.character .MuiCardMedia-root {
+  min-height: 300px;
+  background-position: top center;
+}
+.character p,
+.death p {
+  margin: 0px 0px 10px;
+}
+.character span,
+.character_occupation,
+.death span {
+  font-weight: bold;
+}
+.character_occupation_list {
+  padding-left: 20px;
+  margin-top: 0px;
+}
+.load_more {
+  text-align: center;
+  max-width: 830px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.load_more button {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #202096;
+  color: #202096;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deaths {
+  width: 40%;
+  float: left;
+}
+.deaths h3 {
+  padding-top: 40px;
+}
+.list_deaths .death {
+  border-radius: 10px;
+  background-color: #ebeeff;
+  margin-bottom: 15px;
+  width: 500px;
+}
