@@ -1,7 +1,18 @@
-import React from "react";
+// Dependencies
+import React, { Fragment } from "react";
 
-const Episodes = () => {
-  return <div></div>;
+// Components
+import Episodes from "../Episodes/Episodes";
+
+const EpisodesPage = () => {
+  return (
+    <Fragment>
+      <div className="Episodes">
+        <h2>List of Characters and Deaths</h2>
+        <Episodes />
+      </div>
+    </Fragment>
+  );
 };
 
-export default Episodes;
+export default EpisodesPage;
